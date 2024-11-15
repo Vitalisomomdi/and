@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kims Stores Supermarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <form id="search-form" onsubmit="return searchProducts()">
+            <input type="text" id="search-box" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+     <!-- Categories Pop-Up -->
+  
+</div>
+<button onclick="openPopup()">Open Categories</button>
+     <div id="categories-popup" class="categories-popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="hideCategories()">×</span>
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="products.html?category=electronics">Electronics</a></li>
+                <li><a href="products.html?category=books">Books</a></li>
+                <li><a href="products.html?category=clothing">Clothing</a></li>
+                <li><a href="products.html?category=home-kitchen">Home & Kitchen</a></li>
+                <li><a href="products.html?category=toys">Toys</a></li>
+                <li><a href="products.html?category=sports-outdoors">Sports & Outdoors</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <!-- **Video Background -->
+            <video autoplay loop muted playsinline class="background-video">
+                <source src="images/1100989633-preview.mp4" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1>Welcome to Kims Store Supermarket</h1>
+                <p>Your one-stop shop for all your needs. Explore our latest products and deals!</p>
+                <a href="categories.html" class="btn">Shop Now</a>
+            </div>
+        </section>
+        
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="images/1 (2).jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/1 (3).jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$15.00</p>
+                    <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/1 (4).jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$20.00</p>
+                    <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/1.jpg" alt="SKYWORTH TV">
+                    <h3>SKYWORTH TV</h3>
+                    <p>Ksh 150,000.00</p>
+                    <button onclick="addToCart('SKYWORTH TV', 150000)">Add to Cart</button>
+                </div>
+            </div>
+            <a href="products.html" class="btn">View All Products</a>
+        </section>
+
+        <!-- Other Sections Continue Here -->
+        <section class="features">
+            <div class="feature">
+                <h1>Wide Range of Products</h1>
+                <p>Discover a vast collection of items from various categories.</p>
+                <a href="categories.html" class="btn">Shop Categories</a>
+            </div>
+            <div class="feature">
+                <h1>Secure Payment</h1>
+                <p>We offer secure and reliable payment methods for a hassle-free shopping experience.</p>
+            </div>
+            <div class="feature">
+                <h1>24/7 Support</h1>
+                <p>Our support team is available round the clock to assist you with any queries.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kims Store Supermarket.</p>
+        <p>WhatsApp: 0769265592</p>
+        <p>Email: vitalisomondi221@gmail.com</p>
+        <p>All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

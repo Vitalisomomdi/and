@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <script src="cart.js" defer></script> <!-- Link to the JS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html"></a></li>
+                <li><a href="products.html">Products</a></li>
+                
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="order-summary">
+        <h2>Order Summary</h2>
+        <ul id="orderItems"></ul> <!-- For displaying ordered items -->
+        <p id="orderDate">Order Date: </p> <!-- For displaying the order date -->
+        <p id="orderTime">Order Time: </p> <!-- For displaying the order time -->
+        <p id="orderTotal">Total Price: $0.00</p> <!-- For displaying total price -->
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
